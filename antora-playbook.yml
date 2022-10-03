@@ -1,0 +1,14 @@
+---
+site:
+  title: Jenkins
+  # the 404 page and sitemap files only get generated when the url property is set
+  url: https://basilcrow.com/docs
+  start_page: user-handbook::index.adoc
+content:
+  sources:
+    - url: https://github.com/basil/user-handbook.git
+      branches: [master, stable-2.361]
+ui:
+  bundle:
+    url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
+    snapshot: true
